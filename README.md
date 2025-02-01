@@ -39,9 +39,13 @@ Start Grafana with:
 ./grafana.sh
 ```
 
-With the browser open URL http://hostFQDNorIP:3000/dashboards , select dashboard "Processwatch", press key "v" to View it, reduce time range to "Last 15 minute" and set Refresh to "5s".
+With the browser open URL http://hostFQDNorIP:3000 and login as "admin" with "password". In dashboards http://hostFQDNorIP:3000/dashboards select "Processwatch", press key "v" to View it, reduce time range to "Last 15 minute" and set Refresh to "5s".
 
 Now start some application workloads that are enabled to use AMX, AVX512 or other CPU instructions, and observe how usage of those goes up.
+
+Here is an example view of the screens:
+
+![OpenVINO AMX AVX512 AVX2 demo](./openvino-amx.png)
 
 ## Stop
 
