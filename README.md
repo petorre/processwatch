@@ -11,11 +11,16 @@ cd build
 ./build.sh
 ```
 
-Publish to Docker Hub with
+Set environment variable IMAGEREPOUSER to your Docker Hub username, and publish to Docker Hub with
 
 ```
+export IMAGEREPOUSER=yourdockerhubusername
 ./push.sh
 ```
+
+or do similar for another container image repository.
+
+In [run.sh](./run.sh) update image name to point to where you pushed it.
 
 ## Run
 
