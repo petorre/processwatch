@@ -9,4 +9,6 @@ else
     PN="$1"
 fi
 
-docker run -e PN="${PN}" --name=processwatch --rm -it --network=host --privileged ptorre/processwatch:20250131
+# without exposing counters on :80
+# docker run -e PN="${PN}" --name=processwatch --rm -it --privileged ptorre/processwatch:20250207
+docker run -e PN="${PN}" --name=processwatch --rm -it --network=host --privileged ptorre/processwatch:20250207
