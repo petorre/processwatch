@@ -2,7 +2,7 @@
 
 Docker version of https://github.com/intel/optimized-cloud-recipes/blob/main/AMX_VALIDATION.md with added Prometheus scrapping and Grafana dashboard.
 
-## Prepare
+## (Optional) Prepare
 
 Build with
 
@@ -20,14 +20,14 @@ export IMAGEREPOUSER=yourdockerhubusername
 
 or do similar for another container image repository.
 
-In [run.sh](./run.sh) update image name to point to where you pushed it.
+In [start.sh](./start.sh) update image name to point to where you pushed it.
 
 ## Run
 
 To get CPU instructions usage, run it with optional argument for a process name (that can run in multiple processes):
 
 ```
-./run.sh [processname]
+./start.sh [processname]
 ```
 
 Get Prometheus scrapping and graph with:
