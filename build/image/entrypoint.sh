@@ -13,7 +13,7 @@ if [[ -z "${PN}" ]]; then
 fi
 
 while [[ true ]]; do
-    processwatch -n 1 -c > pw
+    processwatch -n 1 -c > pw 2>> /dev/null
     clear
     echo -n "# "
     date
